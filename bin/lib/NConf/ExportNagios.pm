@@ -964,7 +964,7 @@ $fattr,$fval
                 $fattr = "contact_groups";
                 $fval = join(",",@superadmins);
                 # add a '+' prefix in case the FORCE_CONTACTGROUPS_APPEND option is activated
-                if($force_contactgroups_append eq 1 && not $fval =~ /^\+/){$fval="+".$fval;
+                if($force_contactgroups_append eq 1 && not $fval =~ /^\+/){$fval="+".$fval;}
                 write FILE;
             }
 
